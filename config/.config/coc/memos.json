@@ -2,7 +2,9 @@
   "coc-eslint|global": {
     "eslintAlwaysAllowExecution": true,
     "eslintLibraries": {
-      "libs": {}
+      "libs": {
+        "/home/sharif/projects/test-project/node_modules/eslint/lib/api.js": true
+      }
     }
   }
 }

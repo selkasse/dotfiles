@@ -5,6 +5,8 @@ filetype plugin indent on
 set clipboard=unnamedplus
 
 set mouse=a
+
+set cursorline
            
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -35,10 +37,17 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'ThePrimeagen/vim-be-good'
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
+Plug 'preservim/nerdcommenter'
+
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'alvan/vim-closetag'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tpope/vim-unimpaired'
+Plug 'honza/vim-snippets'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

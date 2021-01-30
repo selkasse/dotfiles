@@ -1,7 +1,9 @@
+snippets.editSnippets
+snippets.openSnippetFiles
+eslint.resetLibraryExecution
+eslint.createConfig
 eslint.showOutputChannel
 prettier.formatFile
-eslint.createConfig
-eslint.resetLibraryExecution
 eslint.lintProject
 eslint.manageLibraryExecution
 prettier.open-output
