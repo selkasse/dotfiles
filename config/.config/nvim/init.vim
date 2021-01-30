@@ -73,10 +73,11 @@ let g:coc_global_extensions = [
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
+let mapleader = " " 
+
 " auto-indent function new line
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-let mapleader = " " 
 
 nnoremap <leader>ev :vsplit $MYVIMRC <CR>
 nnoremap <leader>sv :source $MYVIMRC <CR>
@@ -106,7 +107,8 @@ let g:closetag_regions = {
             \ }
 
 let g:closetag_shortcut = '>'
-let g:closetag_close_shortcut = '<leader>>'
+" commented-out to get rid of insert mode delay
+"let g:closetag_close_shortcut = '<leader>>'
 
 
 
@@ -116,4 +118,5 @@ let g:airline_theme='onedark'
 "let g:airline_theme='biogoo'
 "let g:airline_theme='night_owl'
 "let g:airline_theme='lighthaus'
+
 
