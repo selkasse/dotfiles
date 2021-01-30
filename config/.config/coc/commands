@@ -1,0 +1,7 @@
+eslint.showOutputChannel
+prettier.formatFile
+eslint.createConfig
+eslint.resetLibraryExecution
+eslint.lintProject
+eslint.manageLibraryExecution
+prettier.open-output
