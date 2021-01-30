@@ -82,11 +82,6 @@ nmap - ]e
 vmap = [egv
 vmap - ]egv
 
-" set - to move current line down
-"nnoremap - :m+ <cr>==
-" set = to move current line up
-"nnoremap = :m-2 <cr>==
-
 
 " vim-closetag config - copied from README
 " (only using for React, may need to pare this down)
@@ -108,6 +103,7 @@ let g:closetag_close_shortcut = '<leader>>'
 
 " vim-airline-theme config
 let g:airline_theme='onedark'
+
 "let g:airline_theme='biogoo'
 "let g:airline_theme='night_owl'
 "let g:airline_theme='lighthaus'
