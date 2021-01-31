@@ -113,10 +113,12 @@ let g:closetag_shortcut = '>'
 
 
 " vim-airline-theme config
-let g:airline_theme='onedark'
+"let g:airline_theme='onedark'
+let g:airline_theme='badwolf'
 
 "let g:airline_theme='biogoo'
 "let g:airline_theme='night_owl'
 "let g:airline_theme='lighthaus'
+"let g:airline_theme='base16_ashes'
 
 
