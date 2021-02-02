@@ -1,5 +1,5 @@
-prettier.formatFile
 eslint.showOutputChannel
+prettier.formatFile
 snippets.editSnippets
 snippets.openSnippetFiles
 eslint.resetLibraryExecution
