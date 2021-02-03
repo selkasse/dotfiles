@@ -82,7 +82,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 
 nnoremap <leader>ev :vsplit $MYVIMRC <CR>
 nnoremap <leader>sv :source $MYVIMRC <CR>
-nnoremap <leader>s :vsplit <CR>
+nnoremap <leader>v :vsplit <CR>
 
 nnoremap H 0
 nnoremap L $
