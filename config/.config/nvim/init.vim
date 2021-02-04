@@ -72,10 +72,13 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'Rigellute/shades-of-purple.vim'
 Plug 'morhetz/gruvbox'
 Plug 'pgavlin/pulumi.vim'
+Plug 'cocopon/iceberg.vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'bluz71/vim-nightfly-guicolors'
 
 call plug#end()
 
-colorscheme pulumi
+colorscheme nightfly
 
 let g:coc_global_extensions = [
             \ 'coc-pairs',
