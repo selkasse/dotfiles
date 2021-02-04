@@ -3,11 +3,16 @@ syntax enable
 filetype plugin indent on
 
 set clipboard=unnamedplus
-"set paste
+
+autocmd FileType nerdtree setlocal nolist
+set conceallevel=3
+set guifont=FiraCode
 
 set mouse=a
 
 set cursorline
+
+set splitright
            
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -44,6 +49,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
+Plug 'ryanoasis/vim-devicons'
 
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -92,6 +98,14 @@ nnoremap <leader>k <C-w><Up> <CR>
 nnoremap <leader>h <C-w><Left> <CR>
 nnoremap <leader>l <C-w><Right> <CR>
 
+
+hi VimwikiHeader1 guifg=#E58E0B
+hi VimwikiHeader2 guifg=#7ADDC0
+hi VimwikiHeader3 guifg=#0000FF
+hi VimwikiHeader4 guifg=#FF00FF
+hi VimwikiHeader5 guifg=#00FFFF
+hi VimwikiHeader6 guifg=#FFFF00
+
 nnoremap H 0
 nnoremap L $
 
@@ -131,4 +145,6 @@ let g:airline_theme='badwolf'
 "let g:airline_theme='lighthaus'
 "let g:airline_theme='base16_ashes'
 
-
+if exists("g:loaded_webdevicons")
+      call webdevicons#refresh()
+  endif
