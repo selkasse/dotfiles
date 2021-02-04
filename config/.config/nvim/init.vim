@@ -72,8 +72,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'Rigellute/shades-of-purple.vim'
 Plug 'morhetz/gruvbox'
 Plug 'pgavlin/pulumi.vim'
-Plug 'Mizux/vim-colorschemes'
-Plug 'arzg/vim-colors-xcode'
 
 call plug#end()
 
