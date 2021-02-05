@@ -6,7 +6,11 @@ set clipboard=unnamedplus
 
 autocmd FileType nerdtree setlocal nolist
 set conceallevel=3
-set guifont=FiraCode
+"set guifont=FiraCode
+"set guifont=Hack\ Bold\ Nerd\ Font\ Complete\ 11
+set guifont=3270-Medium\ Nerd\ Font\ Complete\ 25
+let g:airline_powerline_fonts = 1
+set encoding=UTF-8
 
 set mouse=a
 
@@ -49,7 +53,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
-Plug 'ryanoasis/vim-devicons'
 
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -61,13 +64,21 @@ Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+
 " color schemes
 Plug 'Rigellute/shades-of-purple.vim'
 Plug 'morhetz/gruvbox'
+Plug 'pgavlin/pulumi.vim'
+Plug 'cocopon/iceberg.vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'bluz71/vim-nightfly-guicolors'
 
 call plug#end()
 
-colorscheme shades_of_purple
+colorscheme nightfly
 
 let g:coc_global_extensions = [
             \ 'coc-pairs',
@@ -142,10 +153,11 @@ let g:closetag_shortcut = '>'
 
 " vim-airline-theme config
 "let g:airline_theme='onedark'
-let g:airline_theme='badwolf'
+"let g:airline_theme='badwolf'
+"let g:airline_theme='gruvbox'
 
 "let g:airline_theme='biogoo'
-"let g:airline_theme='night_owl'
+let g:airline_theme='night_owl'
 "let g:airline_theme='lighthaus'
 "let g:airline_theme='base16_ashes'
 
