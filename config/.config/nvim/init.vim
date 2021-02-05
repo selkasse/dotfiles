@@ -118,7 +118,7 @@ nnoremap <leader>l <C-w><Right> <CR>
 nnoremap <leader>S <C-w>k<C-w>x
 
 nnoremap <leader>t :NERDTreeToggle <CR>
-nnoremap <leader>C :Calendar <CR> :vertical resize +5 <CR>
+nnoremap <leader>C :Calendar <CR> :vertical resize +7 <CR>
 
 hi VimwikiHeader1 guifg=#E58E0B
 hi VimwikiHeader2 guifg=#7ADDC0
