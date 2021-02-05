@@ -6,9 +6,7 @@ set clipboard=unnamedplus
 
 autocmd FileType nerdtree setlocal nolist
 set conceallevel=3
-"set guifont=FiraCode
-"set guifont=Hack\ Bold\ Nerd\ Font\ Complete\ 11
-set guifont=3270-Medium\ Nerd\ Font\ Complete\ 25
+set guifont=3270-Medium\ Nerd\ Font\ Complete\ 11
 let g:airline_powerline_fonts = 1
 set encoding=UTF-8
 
@@ -42,6 +40,8 @@ set termguicolors
 set colorcolumn=80
 
 highlight ColorColumn ctermbg=80 guibg=lightgrey
+
+"set background=dark
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -105,14 +105,20 @@ nnoremap <leader>v :vsplit <CR>
 nnoremap <leader>ww :vsplit ~/vimwiki/index.wiki <CR>
 let wiki={}
 let wiki.path='~/vimwiki/'
-let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
 let g:vimwiki_list = [wiki]
+
 " switch between splits with <leader> h/j/k/l
 nnoremap <leader>j <C-w><Down> <CR>
 nnoremap <leader>k <C-w><Up> <CR>
 nnoremap <leader>h <C-w><Left> <CR>
 nnoremap <leader>l <C-w><Right> <CR>
 
+
+" swap split positions
+nnoremap <leader>S <C-w>k<C-w>x
+
+nnoremap <leader>t :NERDTreeToggle <CR>
+nnoremap <leader>C :Calendar <CR> :vertical resize +5 <CR>
 
 hi VimwikiHeader1 guifg=#E58E0B
 hi VimwikiHeader2 guifg=#7ADDC0
@@ -163,4 +169,6 @@ let g:airline_theme='night_owl'
 
 if exists("g:loaded_webdevicons")
       call webdevicons#refresh()
-  endif
+endif
+
+
