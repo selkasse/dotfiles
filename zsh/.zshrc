@@ -14,4 +14,5 @@ alias vc="vi ~/.config/nvim/init.vim"
 
 export DISPLAY="$(/sbin/ip route | awk '/default/ { print $3  }'):0"
 
-
+export VISUAL=nvim
+export EDITOR="$VISUAL"
