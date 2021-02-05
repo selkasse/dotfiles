@@ -102,7 +102,11 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 nnoremap <leader>ev :vsplit $MYVIMRC <CR>
 nnoremap <leader>sv :source $MYVIMRC <CR>
 nnoremap <leader>v :vsplit <CR>
-"nnoremap <leader>ww :vsplit ~/vimwiki/index.wiki <CR>
+nnoremap <leader>ww :vsplit ~/vimwiki/index.wiki <CR>
+let wiki={}
+let wiki.path='~/vimwiki/'
+let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
+let g:vimwiki_list = [wiki]
 " switch between splits with <leader> h/j/k/l
 nnoremap <leader>j <C-w><Down> <CR>
 nnoremap <leader>k <C-w><Up> <CR>
