@@ -102,6 +102,9 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 nnoremap <leader>ev :vsplit $MYVIMRC <CR>
 nnoremap <leader>sv :source $MYVIMRC <CR>
 nnoremap <leader>v :vsplit <CR>
+
+nnoremap <leader>f :FZF <CR>
+
 nnoremap <leader>ww :vsplit ~/vimwiki/index.wiki <CR>
 let wiki={}
 let wiki.path='~/vimwiki/'
