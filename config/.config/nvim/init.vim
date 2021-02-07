@@ -139,8 +139,8 @@ vmap - ]egv
 
 
 " vim-closetag config - copied from README
-" (only using for React, may need to pare this down)
-" (auto-closing tags with html works without this config)
+" NOTE: (only using for React, may need to pare this down)
+" NOTE: (auto-closing tags with html works without this config)
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js'
 let g:closetag_filetypes = 'html,xhtml,phtml,js'
@@ -152,7 +152,7 @@ let g:closetag_regions = {
             \ }
 
 let g:closetag_shortcut = '>'
-" commented-out to get rid of insert mode delay
+" NOTE: commented-out to get rid of insert mode delay
 "let g:closetag_close_shortcut = '<leader>>'
 
 
@@ -171,5 +171,25 @@ if exists("g:loaded_webdevicons")
       call webdevicons#refresh()
 endif
 
-"start NERDTree when vim starts
+" start NERDTree when vim starts
 autocmd VimEnter * NERDTree
+
+" open vimwiki external links
+nnoremap <leader>u :call HandleURL()<CR>
+
+function! HandleURL()
+  " get the whole link, including the |Description
+  let s:link = matchstr(getline("."), '[a-z]*:\/\/[^ >,;]*')
+
+  " split the link on | and discard the description
+  let s:uri = split(s:link, "|")[0]
+  
+  echo s:uri
+
+  if s:uri != ""
+    " open uri in default browser
+    silent exec "!explorer.exe '".s:uri."'"
+  else
+    echo "No URI found in line."
+  endif
+endfunction
