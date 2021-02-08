@@ -181,18 +181,17 @@ nnoremap <leader>u :call HandleURL()<CR>
 function! HandleURL()
   " get the whole link, including the |Description
   let s:link = matchstr(getline("."), '[a-z]*:\/\/[^ >,;]*')
-
   " split the link on | and discard the description
   let s:uri = split(s:link, "|")[0]
   
   echo s:uri
 
   if s:uri != ""
-    " open uri in default browser
-    silent exec "!explorer.exe '".s:uri."'"
+    " open uri in default browser (WSL)
+    silent exec "!cmd.exe /c start '".s:uri."'"
   else
-  endif
     echo "No URI found in line."
+  endif
 endfunction
 
 " automatically save and load folds
