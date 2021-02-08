@@ -188,7 +188,7 @@ function! HandleURL()
 
   if s:uri != ""
     " open uri in default browser (WSL)
-    silent exec "!cmd.exe /c start '".s:uri."'"
+    silent exec "!cmd.exe /c start '".s:uri."'" .escape(s:uri, '%#!')
   else
     echo "No URI found in line."
   endif
