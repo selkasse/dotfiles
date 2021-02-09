@@ -45,6 +45,9 @@ Plug 'vimwiki/vimwiki'
 
 Plug 'ThePrimeagen/vim-be-good'
 
+Plug 'kamykn/spelunker.vim'
+Plug 'kamykn/popup-menu.nvim'
+
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
@@ -115,6 +118,10 @@ nnoremap <leader>l <C-w><Right> <CR>
 
 " swap split positions
 nnoremap <leader>S <C-w>k<C-w>x
+
+" manually adjust split size (if no mouse support)
+nnoremap <leader>r :vertical resize +5 <CR>
+nnoremap <leader>R :vertical resize -5 <CR>
 
 " vimwiki config
 nnoremap <leader>ww :vsplit ~/vimwiki/index.wiki <CR>
