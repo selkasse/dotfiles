@@ -4,7 +4,9 @@ nnoremap <leader>ev :vsplit $MYVIMRC <CR>
 nnoremap <leader>sv :source $MYVIMRC <CR>
 
 " general config
-syntax enable
+if !exists("g:syntax_on")
+    syntax enable
+endif
 filetype plugin indent on
 
 set clipboard=unnamedplus
@@ -23,7 +25,7 @@ set smartindent
 set nowrap
 
 set noswapfile
-set hidden
+"set hidden
 set noerrorbells
 set ignorecase
 set relativenumber
@@ -56,6 +58,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'alvan/vim-closetag'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'yuezk/vim-js'
 Plug 'tpope/vim-unimpaired'
 Plug 'honza/vim-snippets'
 
@@ -67,6 +70,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 
 " color schemes
+Plug 'mhartington/oceanic-next'
 Plug 'Rigellute/shades-of-purple.vim'
 Plug 'morhetz/gruvbox'
 Plug 'pgavlin/pulumi.vim'
@@ -124,12 +128,16 @@ nnoremap <leader>r :vertical resize +5 <CR>
 nnoremap <leader>R :vertical resize -5 <CR>
 
 " vimwiki config
-nnoremap <leader>ww :vsplit ~/vimwiki/index.wiki <CR>
+"nnoremap <leader>ww :vsplit ~/vimwiki/index.wiki <CR>
 
 let g:vimwiki_folding = 'syntax'
-
-let wiki={}
-let wiki.path='~/vimwiki/'
+let g:vimwiki_use_calendar= 1
+let wiki = {}
+let wiki.path = $HOME.'/notes'
+let wiki.diary_rel_path = 'journal'
+let wiki.diary_index = 'journal'
+let wiki.diary_header = 'journal'
+let wiki.index = 'index'
 let g:vimwiki_list = [wiki]
 
 hi VimwikiHeader1 guifg=#E58E0B
