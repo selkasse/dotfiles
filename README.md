@@ -118,6 +118,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Windows Terminal Customization
 
+<details>
+<summary>Windows Terminal Customization</summary>
+
 - Themes available on [this site](https://windowsterminalthemes.dev/)
 - Press 'Get theme' to copy the CSS to your clipboard
 - In Windows Terminal, open Settings
@@ -131,6 +134,8 @@ Now, the theme needs to be set in the Windows Terminal app:
 - Scroll to the bottom and select **Appearance** under _Additional Settings_
 - The theme you just added should now appear in the **Color scheme** dropdown
 - Select the theme you want, press **Save**, then view the theme back in the terminal tab
+
+</details>
 
 # SFDX Setup
 
