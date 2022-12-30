@@ -3,7 +3,7 @@
 # Install GitHub CLI
 
 <details>
-  <summary>Click to expand</summary>
+  <summary>GitHub CLI Instructions</summary>
   
   `sudo apt install gh`
   
