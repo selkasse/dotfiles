@@ -22,6 +22,10 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
 <details>
   <summary>trash-cli</summary>
   
+  Main reason for this tool is that WSL does not have a recycle bin.
+  
+  `trash-cli` provides a safer way to delete files and folders, allowing them to be recovered.
+  
   `sudo apt install trash-cli`
   
   Note that there are several aliases for this tool in the `.zshrc` file
