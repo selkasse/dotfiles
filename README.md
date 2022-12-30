@@ -72,6 +72,7 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
 
 <details>
   <summary>zsh-autosuggestions</summary>
+  
   ```
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   ```
