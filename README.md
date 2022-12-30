@@ -115,3 +115,22 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 </details>
+
+# Windows Terminal Customization
+
+- link website
+- instructions on how to add themes
+
+# SFDX Setup
+
+- Salesforce CLI
+- Java Installation
+- setting Path Within VS Code
+
+# Integrating NeoVim with VS Code
+
+- WSL checkbox
+- nvim path
+- config path (init.lua)
+
+# Resources
