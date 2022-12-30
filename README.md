@@ -134,3 +134,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 - config path (init.lua)
 
 # Resources
+
+- Primeagen's "Vim as Your Editor" series
+- Primeagen's "0 to LSP" video
+- TJ Devries' "Instant IDE"
+- TJ Devries' "Builtin Setup Guide"
+- Chris@Machine's Video
+- Firenvim "turn your browser into a Neovim client"
+- Apex Language Server link
