@@ -172,14 +172,31 @@ PATH=~/.npm-global/bin:$PATH
 
 Make sure you install Node.js and complete the default directory change instructions before installing
 
+<details>
+<summary>Salesforce CLI</summary>
+
 ```
 npm install sfdx-cli --global
 npm install @salesforce/cli --global
 ```
 
-- Salesforce CLI
-- Java Installation
-- setting Path Within VS Code
+</details>
+
+<details>
+<summary>Java installation</summary>
+
+- Look at the [Salesforce Documentation](https://developer.salesforce.com/tools/vscode/en/vscode-desktop/java-setup) to see which version of the JDK is recommended
+- Run `apt-cache java` to list available versions from the package manager
+- Find the JRE package name for the recommended version
+  - For example: `openjdk-17-jre`
+- Prepend `sudo apt install` to the name of the package:
+  - `sudo apt install openjdk-17-jre`
+  - Verify installation with `java -version`
+- Do the same thing with the JDK package
+  - `sudo apt install openjdk-17-jdk`
+  - Verify installation with `javac -version`
+
+</details>
 
 # Integrating NeoVim with VS Code
 
