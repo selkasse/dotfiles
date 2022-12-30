@@ -58,21 +58,16 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
  
   ```
   sudo apt install zsh
-  
-  # verify installation
+  #verify installation
   zsh --version
-
-# set as default shell
-
-chsh -s $(which zsh)
-
-```
+  #set as default shell
+  chsh -s $(which zsh)
+  ```
 
 - Exit terminal
 - Re-open terminal
 - You are then prompted with a list of options regarding `.zshrc` file
-  - Select option `(0)`
-
+- Select option `(0)`
 
 </details>
 
@@ -97,6 +92,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 ```
+
 </details>
 
 <details>
@@ -107,5 +103,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 ```
+
 </details>
-```
