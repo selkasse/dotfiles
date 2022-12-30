@@ -11,9 +11,7 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
   sudo apt install gh
   gh auth login
   ```
-  `sudo apt install gh`
-  
-  `gh auth login`
+ 
   - select 'GitHub.com'
   - select HTTPS
   - Yes to authenticate with GitHub credentials
@@ -30,7 +28,9 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
   
   `trash-cli` provides a safer way to delete files and folders, allowing them to be recovered.
   
-  `sudo apt install trash-cli`
+  ```
+  sudo apt install trash-cli
+  ```
   
   Note that there are several aliases for this tool in the `.zshrc` file
 </details>
