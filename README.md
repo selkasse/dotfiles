@@ -8,15 +8,16 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
   <summary>NeoVim Latest</summary>
   
   ```
-  sudo add-apt-repository ppa:neovim-ppa/stable
+  sudo add-apt-repository ppa:neovim-ppa/unstable
   sudo apt-get update
   sudo apt-get install neovim
-  
-  # check version
-  nvim --version
   ```
-  
-  
+  - Check that the latest version was installed
+
+```
+nvim --version
+```
+
 </details>
 
 # Install GitHub CLI
