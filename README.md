@@ -153,6 +153,19 @@ sudo bash /tmp/nodesource_setup.sh
 sudo apt install nodejs
 ```
 
+Need to change node's default directory to avoid permission issues with global installs:
+
+```
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+```
+
+Then, add the following to your `.zshrc`:
+
+```
+export PATH=~/.npm-global/bin:$PATH
+```
+
   </details>
 
 # SFDX Setup
