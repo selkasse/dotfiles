@@ -137,6 +137,17 @@ Now, the theme needs to be set in the Windows Terminal app:
 
 </details>
 
+# Install Node.js
+
+<details>
+<summary>Node.js</summary>
+
+- Check which version of Node is currently the LTS
+  - https://nodejs.org/en/
+- Go to the [nodesource repo](https://github.com/nodesource/distributions/blob/master/README.md#using-ubuntu) and find the version that corresponds with the LTS
+  - Paste the command into your terminal
+  </details>
+
 # SFDX Setup
 
 - Salesforce CLI
