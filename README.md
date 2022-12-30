@@ -160,15 +160,22 @@ mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 ```
 
-Then, add the following to your `.zshrc`:
+Then, add the following to the end of your `.zshrc`:
 
 ```
-export PATH=~/.npm-global/bin:$PATH
+PATH=~/.npm-global/bin:$PATH
 ```
 
   </details>
 
 # SFDX Setup
+
+Make sure you install Node.js and complete the default directory change instructions before installing
+
+```
+npm install sfdx-cli --global
+npm install @salesforce/cli --global
+```
 
 - Salesforce CLI
 - Java Installation
