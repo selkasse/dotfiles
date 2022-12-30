@@ -34,3 +34,27 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
   
   Note that there are several aliases for this tool in the `.zshrc` file
 </details>
+
+
+# Install ZSH
+
+<details>
+  <summary>ZSH</summary>
+  
+  ```
+  sudo apt install zsh
+  
+  # verify installation
+  zsh --version
+
+  # set as default shell
+  chsh -s $(which zsh)
+  ```
+  
+  - Exit terminal
+  - Re-open terminal
+  - You are then prompted with a list of options regarding `.zshrc` file
+    - Select option `(0)`
+  - Then copy the contents of the `.zshrc` file in this repo into `~/.zshrc`
+
+</details>
