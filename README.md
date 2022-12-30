@@ -2,6 +2,23 @@
 
 This is meant to get your dev environment up and running from a fresh Ubuntu install on WSL2.
 
+# Install NeoVim Latest
+
+<details>
+  <summary>NeoVim Latest</summary>
+  
+  ```
+  sudo add-apt-repository ppa:neovim-ppa/stable
+  sudo apt-get update
+  sudo apt-get install neovim
+  
+  # check version
+  nvim --version
+  ```
+  
+  
+</details>
+
 # Install GitHub CLI
 
 <details>
@@ -17,7 +34,6 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
   - Yes to authenticate with GitHub credentials
   - Log in with a web browser
 </details>
-
 
 # Install `trash-cli`
 
@@ -35,7 +51,6 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
   Note that there are several aliases for this tool in the `.zshrc` file
 </details>
 
-
 # Install ZSH/oh-my-zsh
 
 <details>
@@ -47,41 +62,50 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
   # verify installation
   zsh --version
 
-  # set as default shell
-  chsh -s $(which zsh)
-  ```
-  
-  - Exit terminal
-  - Re-open terminal
-  - You are then prompted with a list of options regarding `.zshrc` file
-    - Select option `(0)`
-  
+# set as default shell
+
+chsh -s $(which zsh)
+
+```
+
+- Exit terminal
+- Re-open terminal
+- You are then prompted with a list of options regarding `.zshrc` file
+  - Select option `(0)`
+
 
 </details>
 
 <details>
-  <summary>oh-my-zsh</summary>
-  Note that `zsh` must be installed prior to installing `oh-my-zsh`
-  
-  ```
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  ```
+<summary>oh-my-zsh</summary>
+Note that `zsh` must be installed prior to installing `oh-my-zsh`
 
-  - Then copy the contents of the `.zshrc` in this repo into `~/.zshrc`
+```
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+```
+
+- Then copy the contents of the `.zshrc` in this repo into `~/.zshrc`
 </details>
 
 <details>
-  <summary>zsh-autosuggestions</summary>
-  
-  ```
-  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-  ```
+<summary>zsh-autosuggestions</summary>
+
+```
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+```
 </details>
 
 <details>
-  <summary>zsh-syntax-highlighting</summary>
-  
-  ```
- git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-  ```
+<summary>zsh-syntax-highlighting</summary>
+
+```
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+```
 </details>
+```
