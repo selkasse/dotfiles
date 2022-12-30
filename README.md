@@ -59,11 +59,19 @@ nvim --version
  
   ```
   sudo apt install zsh
-  #verify installation
-  zsh --version
-  #set as default shell
-  chsh -s $(which zsh)
   ```
+
+verify installation
+
+```
+zsh --version
+```
+
+set as default shell
+
+```
+chsh -s $(which zsh)
+```
 
 - Exit terminal
 - Re-open terminal
