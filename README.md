@@ -144,8 +144,13 @@ Now, the theme needs to be set in the Windows Terminal app:
 
 - Check which version of Node is currently the LTS
   - https://nodejs.org/en/
-- Go to the [nodesource repo](https://github.com/nodesource/distributions/blob/master/README.md#using-ubuntu) and find the version that corresponds with the LTS
-  - Paste the command into your terminal
+- Run the command below, replacing `18` with the major version of the current LTS
+
+```
+cd ~
+curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
+```
+
   </details>
 
 # SFDX Setup
