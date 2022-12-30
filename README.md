@@ -73,6 +73,7 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
 
 <details>
 <summary>oh-my-zsh</summary>
+
 Note that `zsh` must be installed prior to installing `oh-my-zsh`
 
 ```
