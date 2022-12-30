@@ -82,7 +82,6 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
   <summary>zsh-syntax-highlighting</summary>
   
   ```
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-  echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
   ```
 </details>
