@@ -36,11 +36,11 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
 </details>
 
 
-# Install ZSH
+# Install ZSH/oh-my-zsh
 
 <details>
   <summary>ZSH</summary>
-  
+ 
   ```
   sudo apt install zsh
   
@@ -55,6 +55,17 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
   - Re-open terminal
   - You are then prompted with a list of options regarding `.zshrc` file
     - Select option `(0)`
-  - Then copy the contents of the `.zshrc` file in this repo into `~/.zshrc`
+  
 
+</details>
+
+<details>
+  <summary>oh-my-zsh</summary>
+  Note that `zsh` must be installed prior to installing `oh-my-zsh`
+  
+  ```
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ```
+
+  - Then copy the contents of the `.zshrc` in this repo into `~/.zshrc`
 </details>
