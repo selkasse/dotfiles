@@ -198,11 +198,43 @@ npm install @salesforce/cli --global
 
 </details>
 
-# Integrating NeoVim with VS Code
+# SFDX VS Code Plugins
 
-- WSL checkbox
-- nvim path
-- config path (init.lua)
+<details>
+<summary>SFDX VS Code Plugins</summary>
+
+- Salesforce CLI Integration
+- Salesforce Extension Pack
+- Salesforce Extension Pack (Expanded)
+
+Once the Salesforce extensions are installed, you will receive an error about your `JAVA_HOME` environment setting. To fix the error, follow the steps below:
+
+- get your Java installation path by running `which java`
+- copy the path
+- In VS Code, open your Settings and search for 'Java Home'
+- in the `Salesforce-vscode-apex > Java:Home` setting, enter the Java path
+- Exit and re-open VS Code
+
+</details>
+
+# Integrating Neovim with VS Code
+
+<details>
+<summary>Integrating Neovim with VS Code</summary>
+
+- Install VSCode Neovim VS Code extension
+- Find your nvim installation path with `which nvim`
+- Make sure you have copied the `.config` folder of this repo to `~/.config`
+- Click the gear for the Neovim extension
+  - Click _Extension Settings_
+- Find the setting: `Vscode-neovim > Neovim Executable Paths: Linux`
+  - set its value to the nvim installation path
+- Find the setting: `Vscode-neovim > Neovim Init Vim Paths`
+  - set its value to `~/.config/nvim/init.lua`
+- **IF USING WSL**
+  - Find the setting `Vscode-neovim: Use WSL` and check the box
+
+</details>
 
 # Resources
 
