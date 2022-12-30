@@ -7,6 +7,10 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
 <details>
   <summary>GitHub CLI</summary>
   
+  ```
+  sudo apt install gh
+  gh auth login
+  ```
   `sudo apt install gh`
   
   `gh auth login`
