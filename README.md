@@ -6,6 +6,7 @@
   <summary>Click to expand</summary>
   
   `sudo apt install gh`
+  
   `gh auth login`
   - select 'GitHub.com'
   - select HTTPS
