@@ -56,16 +56,13 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
 <details>
   <summary>ZSH</summary>
  
-```
-sudo apt install zsh
-
-#verify installation
-zsh --version
-
-#set as default shell
-chsh -s $(which zsh)
-
-```
+  ```
+  sudo apt install zsh
+  #verify installation
+  zsh --version
+  #set as default shell
+  chsh -s $(which zsh)
+  ```
 
 - Exit terminal
 - Re-open terminal
@@ -109,4 +106,3 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 </details>
-```
