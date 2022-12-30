@@ -238,10 +238,10 @@ Once the Salesforce extensions are installed, you will receive an error about yo
 
 # Resources
 
-- Primeagen's "Vim as Your Editor" series
-- Primeagen's "0 to LSP" video
-- TJ Devries' "Instant IDE"
-- TJ Devries' "Builtin Setup Guide"
-- Chris@Machine's Video
-- Firenvim "turn your browser into a Neovim client"
-- Apex Language Server link
+- [The Primeagen "Vim as Your Editor" playlist](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
+- [The Primeagen "Neovim RC From Scratch"](https://www.youtube.com/watch?v=w7i4amO_zaE)
+- [TJ DeVries "Instant IDE"](https://www.youtube.com/watch?v=stqUbv-5u2s)
+- [TJ Devries "Builtin LSP Setup Guide"](https://www.youtube.com/watch?v=puWgHa7k3SY)
+- [chris@machine VSCode with embedded Neovim](https://www.youtube.com/watch?v=g4dXZ0RQWdw)
+- [Firenvim "turn your browser into a Neovim client"](https://github.com/glacambre/firenvim)
+- [Apex Language Server](https://developer.salesforce.com/tools/vscode/en/apex/language-server)
