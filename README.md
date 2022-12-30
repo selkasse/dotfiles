@@ -144,11 +144,13 @@ Now, the theme needs to be set in the Windows Terminal app:
 
 - Check which version of Node is currently the LTS
   - https://nodejs.org/en/
-- Run the command below, replacing `18` with the major version of the current LTS
+- Run the commands below, replacing `18` with the major version of the current LTS
 
 ```
 cd ~
 curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
+sudo bash /tmp/nodesource_setup.sh
+sudo apt install nodejs
 ```
 
   </details>
