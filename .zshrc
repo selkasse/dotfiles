@@ -113,6 +113,7 @@ alias te="trash-empty"
 alias tl="trash-list"
 alias tr="trash-restore"
 
+bindkey '\t' autosuggest-accept
 # fixes terribly slow startup/sourcing problem
 DISABLE_AUTO_UPDATE="true"
 
