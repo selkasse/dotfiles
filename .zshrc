@@ -117,3 +117,4 @@ alias tr="trash-restore"
 DISABLE_AUTO_UPDATE="true"
 
 PATH=~/sfdx/bin:$PATH
+PATH=~/.npm-global/bin:$PATH
