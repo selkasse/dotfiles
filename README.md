@@ -20,7 +20,7 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
 # Install `trash-cli`
 
 <details>
-  <summary>`trash-cli`</summary>
+  <summary>trash-cli</summary>
   
   `sudo apt install trash-cli`
   
