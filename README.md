@@ -8,6 +8,7 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
 
 <details>
   <summary>NeoVim Latest</summary>
+  <br />
   
   ```
   sudo add-apt-repository ppa:neovim-ppa/unstable
@@ -28,6 +29,7 @@ nvim --version
 
 <details>
   <summary>GitHub CLI</summary>
+  <br />
   
   ```
   sudo apt install gh
@@ -46,6 +48,7 @@ nvim --version
 
 <details>
   <summary>trash-cli</summary>
+  <br />
   
   Main reason for this tool is that WSL does not have a recycle bin.
   
@@ -64,6 +67,7 @@ nvim --version
 
 <details>
   <summary>ZSH</summary>
+  <br />
  
   ```
   sudo apt install zsh
@@ -90,6 +94,7 @@ chsh -s $(which zsh)
 
 <details>
 <summary>oh-my-zsh</summary>
+  <br />
 
 Note that `zsh` must be installed prior to installing `oh-my-zsh`
 
@@ -104,6 +109,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 <details>
 <summary>zsh-autosuggestions</summary>
+  <br />
 
 ```
 
@@ -115,6 +121,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 <details>
 <summary>zsh-syntax-highlighting</summary>
+  <br />
 
 ```
 
@@ -130,6 +137,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 <details>
 <summary>Windows Terminal Customization</summary>
+  <br />
 
 - Themes available on [this site](https://windowsterminalthemes.dev/)
 - Press 'Get theme' to copy the CSS to your clipboard
@@ -153,6 +161,7 @@ Now, the theme needs to be set in the Windows Terminal app:
 
 <details>
 <summary>Node.js</summary>
+  <br />
 
 - Check which version of Node is currently the LTS
   - https://nodejs.org/en/
@@ -188,6 +197,7 @@ Make sure you install Node.js and complete the default directory change instruct
 
 <details>
 <summary>Salesforce CLI</summary>
+  <br />
 
 ```
 npm install sfdx-cli --global
@@ -198,6 +208,7 @@ npm install @salesforce/cli --global
 
 <details>
 <summary>Java installation</summary>
+  <br />
 
 - Look at the [Salesforce Documentation](https://developer.salesforce.com/tools/vscode/en/vscode-desktop/java-setup) to see which version of the JDK is recommended
 - Run `apt-cache java` to list available versions from the package manager
@@ -218,6 +229,7 @@ npm install @salesforce/cli --global
 
 <details>
 <summary>SFDX VS Code Plugins</summary>
+  <br />
 
 - Salesforce CLI Integration
 - Salesforce Extension Pack
@@ -239,6 +251,7 @@ Once the Salesforce extensions are installed, you will receive an error about yo
 
 <details>
 <summary>Integrating Neovim with VS Code</summary>
+  <br />
 
 - Install VSCode Neovim VS Code extension
 - Install Lua extension
@@ -262,6 +275,7 @@ Once the Salesforce extensions are installed, you will receive an error about yo
 
 <details>
 <summary>Packer</summary>
+  <br />
 
 Packer is the Neovim plugin manager we will be using for this configuration.
 
@@ -291,6 +305,7 @@ nvim .config/nvim/lua/neoVimConfig/packer.lua
 
 <details>
 <summary>firenvim</summary>
+  <br />
 
 firenvim allows you to use your Neovim configuration within a browser's textarea.
 
@@ -334,6 +349,7 @@ nvim .config/nvim/lua/neoVimConfig/packer.lua
 
 <details>
 <summary>creating a firenvim-specific config</summary>
+  <br />
 
 if you are using the file structure outlined in this repo, some of the instructions may already be complete
 
@@ -376,6 +392,7 @@ require('fireNvimConfig.settings')
 
 <details>
 <summary>troubleshooting</summary>
+  <br />
 
 To see if there are any errors when loading firenvim:
 
