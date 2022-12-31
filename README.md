@@ -2,6 +2,8 @@
 
 This is meant to get your dev environment up and running from a fresh Ubuntu install on WSL2.
 
+<br />
+
 # Install NeoVim Latest
 
 <details>
@@ -20,6 +22,7 @@ nvim --version
 
 </details>
 
+<br />
 # Install GitHub CLI
 
 <details>
@@ -36,6 +39,8 @@ nvim --version
   - Log in with a web browser
 </details>
 
+<br />
+
 # Install `trash-cli`
 
 <details>
@@ -51,6 +56,8 @@ nvim --version
   
   Note that there are several aliases for this tool in the `.zshrc` file
 </details>
+
+<br />
 
 # Install ZSH/oh-my-zsh
 
@@ -116,6 +123,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 </details>
 
+<br />
+
 # Windows Terminal Customization
 
 <details>
@@ -136,6 +145,8 @@ Now, the theme needs to be set in the Windows Terminal app:
 - Select the theme you want, press **Save**, then view the theme back in the terminal tab
 
 </details>
+
+<br />
 
 # Install Node.js
 
@@ -168,6 +179,8 @@ PATH=~/.npm-global/bin:$PATH
 
   </details>
 
+<br />
+
 # SFDX Setup
 
 Make sure you install Node.js and complete the default directory change instructions before installing
@@ -198,6 +211,8 @@ npm install @salesforce/cli --global
 
 </details>
 
+<br />
+
 # SFDX VS Code Plugins
 
 <details>
@@ -216,6 +231,8 @@ Once the Salesforce extensions are installed, you will receive an error about yo
 - Exit and re-open VS Code
 
 </details>
+
+<br />
 
 # Integrating Neovim with VS Code
 
@@ -237,6 +254,8 @@ Once the Salesforce extensions are installed, you will receive an error about yo
   - Find the setting `Vscode-neovim: Use WSL` and check the box
 
 </details>
+
+<br />
 
 # Packer
 
@@ -264,6 +283,8 @@ nvim .config/nvim/lua/neoVimConfig/packer.lua
 - run `:PackerSync` to install the plugins listed in the file
 
 </details>
+
+<br />
 
 # firenvim
 
@@ -385,6 +406,8 @@ If you are able to invoke the interface on some sites, but not others, you may n
   - either reload firenvim settings, or reopen the browser entirely
 
 </details>
+
+<br />
 
 # Resources
 
