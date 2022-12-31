@@ -395,7 +395,3 @@ If you are able to invoke the interface on some sites, but not others, you may n
 - [chris@machine VSCode with embedded Neovim](https://www.youtube.com/watch?v=g4dXZ0RQWdw)
 - [Firenvim "turn your browser into a Neovim client"](https://github.com/glacambre/firenvim)
 - [Apex Language Server](https://developer.salesforce.com/tools/vscode/en/apex/language-server)
-
-```
-
-```
