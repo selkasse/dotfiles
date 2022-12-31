@@ -357,7 +357,7 @@ require('fireNvimConfig.settings')
 
 To see if there are any errors when loading firenvim:
 
-- click the Extensions buttin in your browser (looks like a puzzlie piece)
+- click the Extensions button in your browser (looks like a puzzlie piece)
 - click Firenvim
 - click "Reload Settings"
 - any errors will show up in the extension widget
