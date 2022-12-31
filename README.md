@@ -223,6 +223,8 @@ Once the Salesforce extensions are installed, you will receive an error about yo
 <summary>Integrating Neovim with VS Code</summary>
 
 - Install VSCode Neovim VS Code extension
+- Install Lua extension
+  - this will allow for syntax highlighting and typechecking when working with `.lua` files
 - Find your nvim installation path with `which nvim`
 - Make sure you have copied the `.config` folder of this repo to `~/.config`
 - Click the gear for the Neovim extension
@@ -236,6 +238,154 @@ Once the Salesforce extensions are installed, you will receive an error about yo
 
 </details>
 
+# Packer
+
+<details>
+<summary>Packer</summary>
+
+Packer is the Neovim plugin manager we will be using for this configuration.
+
+You'll notice there is a `packer.lua` file in `.config/nvim/lua/neoVimConfig`. This file will not work until we clone the [repo](https://github.com/wbthomason/packer.nvim):
+
+```
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+After running the command above, follow these steps:
+
+- open the Packer config
+
+```
+nvim .config/nvim/lua/neoVimConfig/packer.lua
+```
+
+- source the file by running `:so` within Neovim
+- run `:PackerSync` to install the plugins listed in the file
+
+</details>
+
+# firenvim
+
+<details>
+<summary>firenvim</summary>
+
+firenvim allows you to use your Neovim configuration within a browser's textarea.
+
+at a high level, firenvim requires two things:
+
+- firenvim plugin in Neovim
+- firenvim browser extension
+
+before performing the steps in the section, make sure you have followed the steps in the **Packer** section above
+
+once Packer is installed, follow the steps below:
+
+- open the Packer config
+
+```
+nvim .config/nvim/lua/neoVimConfig/packer.lua
+```
+
+- add the following to the list of existing plugins within the file
+
+```
+ use ({
+    'glacambre/firenvim',
+    run = function() vim.fn['firenvim#install'](0) end
+  })
+```
+
+- save the file
+- source the file with `:so`
+- install the plugin with `:PackerSync`
+
+  - you will need to keep pressing `ENTER` at the Packer installation screen
+  - the installation will eventually complete, and the small window at the bottom will disappear
+
+- install the firenvim extension for whatever browser you are using
+- close and re-open your browser
+- go to a site that has a text area (such as [regexr](https://regexr.com/))
+- click into the text area. Neovim should activate
+
+</details>
+
+<details>
+<summary>creating a firenvim-specific config</summary>
+
+if you are using the file structure outlined in this repo, some of the instructions may already be complete
+
+- open `.config/nvim/init.lua`
+- the file should look like this:
+
+```
+if vim.g.vscode then
+    -- VSCode extension
+    require("vsCodeConfig")
+elseif vim.g.started_by_firenvim then
+    -- firenvim browser extension
+    require("fireNvimConfig")
+else
+    -- ordinary Neovim
+    require("neoVimConfig")
+end
+
+```
+
+- in the `.config/nvim/lua` folder, make a new folder called `fireNvimConfig`
+- create two files:
+
+  - `/.config/nvim/lua/fireNvimconfig/init.lua`
+  - `/.config/nvim/lua/fireNvimconfig/settings.lua`
+
+- in `fireNvimConfig/init.lua`:
+
+```
+require('fireNvimConfig.settings')
+
+```
+
+- then, place your firenvim-specific settings in `fireNvimconfig/settings.lua`
+
+- Note that plugins installed from the `neoVimConfig` folder are accessible in the `fireNvimConfig` folder
+  - there is no need to set up your plugin manager again in this folder
+
+</details>
+
+<details>
+<summary>troubleshooting</summary>
+
+To see if there are any errors when loading firenvim:
+
+- click the Extensions buttin in your browser (looks like a puzzlie piece)
+- click Firenvim
+- click "Reload Settings"
+- any errors will show up in the extension widget
+
+If you are using Brave, you may need to take these steps to get the extension working:
+
+- open neovim
+  - `nvim .`
+- open the command in neovim by pressing the colon key `:`
+- paste the following after the colon:
+  - `call firenvim#install(0)`
+- close and re-open Brave
+- attempt to invoke firenvim in a textarea once more
+
+If you having trouble getting the nvim interface to show up, but not seeing any errors, you may need to invoke it manually.
+
+- the default shortcut for doing this is `<C-e>`
+
+If you are able to invoke the interface on some sites, but not others, you may need to invoke firenvim as an iframe:
+
+- open the shortcuts menu for your browser at `chrome://extensions/shortcuts`
+  - replace `chrome` with the name of your browser
+- find the shortcut titled "Turn the currently focused element into a neovim iframe"
+  - set a shortcut (such as `<C-i>`)
+  - either reload firenvim settings, or reopen the browser entirely
+
+</details>
+
 # Resources
 
 - [The Primeagen "Vim as Your Editor" playlist](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
@@ -245,3 +395,7 @@ Once the Salesforce extensions are installed, you will receive an error about yo
 - [chris@machine VSCode with embedded Neovim](https://www.youtube.com/watch?v=g4dXZ0RQWdw)
 - [Firenvim "turn your browser into a Neovim client"](https://github.com/glacambre/firenvim)
 - [Apex Language Server](https://developer.salesforce.com/tools/vscode/en/apex/language-server)
+
+```
+
+```
