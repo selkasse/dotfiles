@@ -23,6 +23,7 @@ nvim --version
 </details>
 
 <br />
+
 # Install GitHub CLI
 
 <details>
