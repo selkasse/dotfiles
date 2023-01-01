@@ -429,6 +429,7 @@ If you are able to invoke the interface on some sites, but not others, you may n
 
 # Resources
 
+- [Managing Dotfiles With Stow](https://alexpearce.me/2016/02/managing-dotfiles-with-stow/)
 - [The Primeagen "Vim as Your Editor" playlist](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
 - [The Primeagen "Neovim RC From Scratch"](https://www.youtube.com/watch?v=w7i4amO_zaE)
 - [TJ DeVries "Instant IDE"](https://www.youtube.com/watch?v=stqUbv-5u2s)
