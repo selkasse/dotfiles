@@ -40,7 +40,7 @@ There are a few important things to keep in mind when using stow:
 
 - the `stow` command only works on directories (not files)
 - if the file(s) within the directory you run `stow` on already exist **one folder up**, the `stow` command will not work
-- more more details, refer to this [blog post](https://alexpearce.me/2016/02/managing-dotfiles-with-stow/)
+- for more details, refer to this [blog post](https://alexpearce.me/2016/02/managing-dotfiles-with-stow/)
 
 </details>
 
