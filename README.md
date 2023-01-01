@@ -15,7 +15,32 @@ If you want to use the same configuration across multiple devices, GNU stow will
 
   <br />
 
-add GNU Stow stuff here
+- first, install GNU Stow
+
+```
+sudo apt install stow
+```
+
+- **delete** the following files/folders from your home directory (if they exist)
+
+  - `.zshrc`
+  - `.config/`
+
+- run the following commands **from within the root directory of this repo**:
+
+```
+stow zsh
+stow .config
+```
+
+- test to see if the symlinks work by making changes to the files (either in the repo, or in the home directory)
+- if the changes sync between the files, everything is working correctly
+
+There are a few important things to keep in mind when using stow:
+
+- the `stow` command only works on directories (not files)
+- if the file(s) within the directory you run `stow` on already exist **one folder up**, the `stow` command will not work
+- more more details, refer to this [blog post](https://alexpearce.me/2016/02/managing-dotfiles-with-stow/)
 
 </details>
 
@@ -283,6 +308,23 @@ Once the Salesforce extensions are installed, you will receive an error about yo
   - set its value to `~/.config/nvim/init.lua`
 - **IF USING WSL**
   - Find the setting `Vscode-neovim: Use WSL` and check the box
+
+</details>
+
+<br />
+
+## Custom VS Code Keyboard Shortcuts
+
+<details>
+<summary>Keyboard Shortcuts</summary>
+  <br />
+
+- copy the contents of `keybindings.json` from this repo
+- in VS Code, open the command palette
+  - type **Keyboard**
+  - select **Preferences: Open Keyboard Shortcuts (JSON)**
+- paste the JSON from the repo into the file
+- note that we are not able to sync using Stow because the keybindings file exists on the Windows filesystem
 
 </details>
 
