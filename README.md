@@ -4,7 +4,24 @@ This is meant to get your dev environment up and running from a fresh Ubuntu ins
 
 <br />
 
-# Install NeoVim Latest
+## Syncing dotfiles with GNU Stow
+
+If you want to use the same configuration across multiple devices, GNU stow will help keep the files in sync. It does so by symlinks in the background, with easy-to-use syntax. All you have to concern yourself with is the file structure
+
+<br />
+
+<details>
+  <summary>GNU Stow</summary>
+
+  <br />
+
+add GNU Stow stuff here
+
+</details>
+
+<br />
+
+## Install NeoVim Latest
 
 <details>
   <summary>NeoVim Latest</summary>
@@ -25,7 +42,7 @@ nvim --version
 
 <br />
 
-# Install GitHub CLI
+## Install GitHub CLI
 
 <details>
   <summary>GitHub CLI</summary>
@@ -44,7 +61,7 @@ nvim --version
 
 <br />
 
-# Install `trash-cli`
+## Install `trash-cli`
 
 <details>
   <summary>trash-cli</summary>
@@ -63,7 +80,7 @@ nvim --version
 
 <br />
 
-# Install ZSH/oh-my-zsh
+## Install ZSH/oh-my-zsh
 
 <details>
   <summary>ZSH</summary>
@@ -133,7 +150,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 <br />
 
-# Windows Terminal Customization
+## Windows Terminal Customization
 
 <details>
 <summary>Windows Terminal Customization</summary>
@@ -157,7 +174,7 @@ Now, the theme needs to be set in the Windows Terminal app:
 
 <br />
 
-# Install Node.js
+## Install Node.js
 
 <details>
 <summary>Node.js</summary>
@@ -191,7 +208,7 @@ PATH=~/.npm-global/bin:$PATH
 
 <br />
 
-# SFDX Setup
+## SFDX Setup
 
 Make sure you install Node.js and complete the default directory change instructions before installing
 
@@ -225,7 +242,7 @@ npm install @salesforce/cli --global
 
 <br />
 
-# SFDX VS Code Plugins
+## SFDX VS Code Plugins
 
 <details>
 <summary>SFDX VS Code Plugins</summary>
@@ -247,7 +264,7 @@ Once the Salesforce extensions are installed, you will receive an error about yo
 
 <br />
 
-# Integrating Neovim with VS Code
+## Integrating Neovim with VS Code
 
 <details>
 <summary>Integrating Neovim with VS Code</summary>
@@ -271,7 +288,7 @@ Once the Salesforce extensions are installed, you will receive an error about yo
 
 <br />
 
-# Packer
+## Packer
 
 <details>
 <summary>Packer</summary>
@@ -301,7 +318,7 @@ nvim .config/nvim/lua/neoVimConfig/packer.lua
 
 <br />
 
-# firenvim
+## firenvim
 
 <details>
 <summary>firenvim</summary>
@@ -427,7 +444,7 @@ If you are able to invoke the interface on some sites, but not others, you may n
 
 <br />
 
-# Resources
+## Resources
 
 - [Managing Dotfiles With Stow](https://alexpearce.me/2016/02/managing-dotfiles-with-stow/)
 - [The Primeagen "Vim as Your Editor" playlist](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
