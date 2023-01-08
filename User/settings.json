@@ -1,1 +1,29 @@
-../../../../mnt/c/Users/Sharif Elkassed/AppData/Roaming/Code/User/settings.json
+{
+  "salesforcedx-vscode-apex.java.home": "C:\\\\Program Files\\\\Java\\\\jdk-11.0.11",
+  "redhat.telemetry.enabled": false,
+  "tabnine.experimentalAutoImports": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "window.zoomLevel": 1,
+  "SFDoc.EnableForLightningJavascript": true,
+  "SFDoc.IncludeModificationLogScaffoldInFileHeader": true,
+  "SFDoc.IncludParameterTypeInMethodHeader": true,
+  "SFDoc.username": "sharif.elkassed@zennify.com",
+  "files.associations": {
+    "*.page": "html"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "editor.lineNumbers": "relative",
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Night Owl",
+  "Lua.telemetry.enable": true,
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.useWSL": true,
+  "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/init.lua",
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
