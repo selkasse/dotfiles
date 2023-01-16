@@ -118,4 +118,4 @@ DISABLE_AUTO_UPDATE="true"
 
 PATH=~/sfdx/bin:$PATH
 PATH=~/.npm-global/bin:$PATH
-#test from work laptop
+PATH=~/win32yank.exe:$PATH

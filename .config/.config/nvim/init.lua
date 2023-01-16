@@ -3,6 +3,10 @@ if vim.g.vscode then
     require("vsCodeConfig")
 elseif vim.g.started_by_firenvim then
     -- firenvim browser extension
+    -- VSCode extension
+    require("vsCodeConfig")
+elseif vim.g.started_by_firenvim then
+    -- firenvim browser extension
     require("fireNvimConfig")
 else
     -- ordinary Neovim
