@@ -1,0 +1,67 @@
+{
+  "workbench.colorTheme": "Moonlight",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.useWSL": true,
+  "vscode-neovim.neovimInitVimPaths.linux": "/home/sharif/.config/nvim/init.lua",
+  "salesforcedx-vscode-apex.java.home": "/usr/bin/java",
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "search.smartCase": true,
+  "macros": {
+    "pageDownCenterCursor": [
+      "cursorPageDown",
+      { "command": "type", "args": { "text": "zz" } },
+      "insertSnippet"
+    ],
+    "pageUpCenterCursor": [
+      "cursorPageUp",
+      { "command": "type", "args": { "text": "zz" } },
+      "insertSnippet"
+    ]
+  }
+}
